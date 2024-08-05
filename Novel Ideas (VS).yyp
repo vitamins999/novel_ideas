@@ -34,8 +34,14 @@
   },
   "name":"Novel Ideas (VS)",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"obj_camera_zone","path":"objects/obj_camera_zone/obj_camera_zone.yy",},},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"rm_big_room","path":"rooms/rm_big_room/rm_big_room.yy",},},
+    {"id":{"name":"rm_dungeon_test","path":"rooms/rm_dungeon_test/rm_dungeon_test.yy",},},
     {"id":{"name":"scr_macros","path":"scripts/scr_macros/scr_macros.yy",},},
+    {"id":{"name":"spr_camera_zone","path":"sprites/spr_camera_zone/spr_camera_zone.yy",},},
     {"id":{"name":"spr_house_tiles","path":"sprites/spr_house_tiles/spr_house_tiles.yy",},},
     {"id":{"name":"spr_player_down","path":"sprites/spr_player_down/spr_player_down.yy",},},
     {"id":{"name":"spr_player_left","path":"sprites/spr_player_left/spr_player_left.yy",},},
@@ -47,7 +53,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_dungeon_test","path":"rooms/rm_dungeon_test/rm_dungeon_test.yy",},},
+    {"roomId":{"name":"rm_big_room","path":"rooms/rm_big_room/rm_big_room.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
