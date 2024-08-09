@@ -1,16 +1,12 @@
-xspd = 0;
-yspd = 0;
+state = PlayerStateFree;
 
-move_spd = 2;
+collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
 
-//sprite[RIGHT] = spr_player_right;
-//sprite[UP] = spr_player_up;
-//sprite[LEFT] = spr_player_left;
-//sprite[DOWN] = spr_player_down;
+image_speed = 0;
+hSpeed = 0;
+vSpeed = 0;
+speedWalk = 2.0;
 
-sprite[RIGHT] = spr_stu_front;
-sprite[UP] = spr_stu_front;
-sprite[LEFT] = spr_stu_front;
-sprite[DOWN] = spr_stu_front;
-
-face = DOWN;
+spriteRun = spr_player_run;
+spriteIdle = spr_player;
+localFrame = 0;

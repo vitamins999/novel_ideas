@@ -5,20 +5,13 @@
 
 // my monitor: 2560 x 1440
 
-view_width = 256;
-view_height = 224;
+// Widescreen
+//view_width = 320;
+//view_height = 180;
 
-if (display_get_width() mod view_width != 0)
-{
-	var _d = round(display_get_width() / view_width)
-	view_width = display_get_width() / _d;
-}
-
-if (display_get_height() mod view_height != 0)
-{
-	var _d = round(display_get_height() / view_height)
-	view_width = display_get_height() / _d;
-}
+//Fullscreen (SNES)
+view_width = 240;
+view_height = 180;
 
 window_scale = 3;
 max_window_scale = floor(display_get_height() / view_height);
