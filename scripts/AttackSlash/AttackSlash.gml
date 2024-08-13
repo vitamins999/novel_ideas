@@ -18,7 +18,7 @@ function AttackSlash(){
 		
 	}
 	
-	CalcAttack(spr_player_attack_slash_HB);
+	CalcAttack(spr_player_attack_slash_HB_box);
 	
 	// Update sprite
 	PlayerAnimateSprite();
