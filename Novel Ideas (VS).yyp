@@ -43,7 +43,6 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_christmas_tree","path":"objects/obj_christmas_tree/obj_christmas_tree.yy",},},
     {"id":{"name":"obj_giraffe","path":"objects/obj_giraffe/obj_giraffe.yy",},},
-    {"id":{"name":"obj_git_test","path":"objects/obj_git_test/obj_git_test.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
