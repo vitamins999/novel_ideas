@@ -48,6 +48,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},},
     {"id":{"name":"rm_big_room","path":"rooms/rm_big_room/rm_big_room.yy",},},
+    {"id":{"name":"rm_dungeon_1","path":"rooms/rm_dungeon_1/rm_dungeon_1.yy",},},
     {"id":{"name":"rm_dungeon_test","path":"rooms/rm_dungeon_test/rm_dungeon_test.yy",},},
     {"id":{"name":"AttackSlash","path":"scripts/AttackSlash/AttackSlash.yy",},},
     {"id":{"name":"CalcAttack","path":"scripts/CalcAttack/CalcAttack.yy",},},
@@ -101,6 +102,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_dungeon_test","path":"rooms/rm_dungeon_test/rm_dungeon_test.yy",},},
     {"roomId":{"name":"rm_big_room","path":"rooms/rm_big_room/rm_big_room.yy",},},
+    {"roomId":{"name":"rm_dungeon_1","path":"rooms/rm_dungeon_1/rm_dungeon_1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
