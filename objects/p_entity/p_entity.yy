@@ -31,6 +31,8 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"entityCollision","filters":[],"listItems":[],"multiselect":false,"name":"entityCollision","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"entityHitScript","filters":[],"listItems":[],"multiselect":false,"name":"entityHitScript","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"entityActivateScript","filters":[],"listItems":[],"multiselect":false,"name":"entityActivateScript","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"entityActivateArgs","filters":[],"listItems":[],"multiselect":false,"name":"entityActivateArgs","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[-1]","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
