@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"EditorkWander",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"EditorkWander",
+  "parent":{
+    "name":"Editork",
+    "path":"folders/Scripts/Editork.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

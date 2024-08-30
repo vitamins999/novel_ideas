@@ -304,6 +304,7 @@
     {"name":"inst_6D56A5C8","path":"rooms/rm_dungeon_test/rm_dungeon_test.yy",},
     {"name":"inst_4C88828B","path":"rooms/rm_dungeon_test/rm_dungeon_test.yy",},
     {"name":"inst_7BF417C6","path":"rooms/rm_dungeon_test/rm_dungeon_test.yy",},
+    {"name":"inst_2060CA03","path":"rooms/rm_dungeon_test/rm_dungeon_test.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -646,6 +647,7 @@
         {"$GMRInstance":"v1","%Name":"inst_4DE04AC9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4DE04AC9","objectId":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16.0,"y":32.0,},
         {"$GMRInstance":"v1","%Name":"inst_4C88828B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4C88828B","objectId":{"name":"obj_christmas_tree","path":"objects/obj_christmas_tree/obj_christmas_tree.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":80.0,},
         {"$GMRInstance":"v1","%Name":"inst_7BF417C6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7BF417C6","objectId":{"name":"obj_giraffe","path":"objects/obj_giraffe/obj_giraffe.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":144.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2060CA03","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2060CA03","objectId":{"name":"obj_editork","path":"objects/obj_editork/obj_editork.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":176.0,"y":208.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":161,"SerialiseWidth":161,"TileCompressedData":[
           -162,1,1,4,-42,5,1,6,-117,1,3,8,9,9,-3,1,-12,9,-3,1,-22,9,1,10,-117,1,3,8,9,9,-3,1,-12,9,-3,1,-22,9,
