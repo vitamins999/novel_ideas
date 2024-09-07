@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"ts_dungeon_tiles",
+  "%Name":"ts_dungeon1_tiles",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"ts_dungeon_tiles",
-  "out_columns":4,
+  "name":"ts_dungeon1_tiles",
+  "out_columns":11,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_house_tiles",
-    "path":"sprites/spr_house_tiles/spr_house_tiles.yy",
+    "name":"spr_dungeon1_tiles",
+    "path":"sprites/spr_dungeon1_tiles/spr_dungeon1_tiles.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":16,
+  "tile_count":117,
 }
