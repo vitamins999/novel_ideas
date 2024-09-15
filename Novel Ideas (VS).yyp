@@ -36,12 +36,11 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Novel Ideas (VS)",
   "resources":[
     {"id":{"name":"fnt_gui","path":"fonts/fnt_gui/fnt_gui.yy",},},
-    {"id":{"name":"fake_object_for_testing","path":"objects/fake_object_for_testing/fake_object_for_testing.yy",},},
     {"id":{"name":"GUI","path":"objects/GUI/GUI.yy",},},
     {"id":{"name":"obj_camera_zone","path":"objects/obj_camera_zone/obj_camera_zone.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
