@@ -112,8 +112,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_dungeon_test","path":"rooms/rm_dungeon_test/rm_dungeon_test.yy",},},
     {"roomId":{"name":"rm_dungeon_1","path":"rooms/rm_dungeon_1/rm_dungeon_1.yy",},},
+    {"roomId":{"name":"rm_dungeon_test","path":"rooms/rm_dungeon_test/rm_dungeon_test.yy",},},
     {"roomId":{"name":"rm_big_room","path":"rooms/rm_big_room/rm_big_room.yy",},},
   ],
   "templateType":"game",
