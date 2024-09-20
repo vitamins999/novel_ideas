@@ -14,10 +14,11 @@ function CalcAttack(_collisionMask){
 				ds_list_add(hitByAttack, hitID);
 				with (hitID)
 				{
-					if (entityHitScript != -1)
+					if (object_is_ancestor(object_index, p_enemy))
 					{
-						script_execute(entityHitScript)
+						HurtEnemy(id, 5, other.id, 10);
 					}
+					if (entityHitScript != -1) script_execute(entityHitScript)
 				}
 			}
 		}

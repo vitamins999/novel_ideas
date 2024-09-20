@@ -8,7 +8,7 @@
   "name":"obj_editork",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entityCollision","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entityHitScript","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"EntityHitSolid",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_enemy","path":"objects/p_enemy/p_enemy.yy",},"propertyId":{"name":"enemyHP","path":"objects/p_enemy/p_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
   ],
   "parent":{
     "name":"Enemies",
