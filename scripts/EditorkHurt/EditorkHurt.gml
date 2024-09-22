@@ -1,5 +1,5 @@
 function EditorkHurt(){
-	// ADD sprite_index = sprHurt;
+	sprite_index = sprHurt;
 	var _distanceToGo = point_distance(x, y, xTo, yTo);
 	if (_distanceToGo > enemySpeed)
 	{

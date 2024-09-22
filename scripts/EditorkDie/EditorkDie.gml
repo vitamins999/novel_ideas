@@ -2,6 +2,12 @@ function EditorkDie(){
 	sprite_index = sprDie;
 	image_speed = 1.0;
 	
+	if (!dieAnimationStarted)
+	{
+		image_index = startFrame;
+		dieAnimationStarted = true;
+	}
+	
 	var _distanceToGo = point_distance(x, y, xTo, yTo);
 	if (_distanceToGo > enemySpeed)
 	{
