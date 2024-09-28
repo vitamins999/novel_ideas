@@ -21,8 +21,8 @@
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Editork","folderPath":"folders/Scripts/Editork.yy","name":"Editork","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Dark Knight","folderPath":"folders/Scripts/Dark Knight.yy","name":"Dark Knight","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Editork","folderPath":"folders/Scripts/Editork.yy","name":"Editork","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"PlayerAttacks","folderPath":"folders/Scripts/PlayerAttacks.yy","name":"PlayerAttacks","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"PlayerGeneral","folderPath":"folders/Scripts/PlayerGeneral.yy","name":"PlayerGeneral","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"PlayerStateMachine","folderPath":"folders/Scripts/PlayerStateMachine.yy","name":"PlayerStateMachine","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -41,6 +41,7 @@
   },
   "name":"Novel Ideas (VS)",
   "resources":[
+    {"id":{"name":"fnt_gui_outline","path":"fonts/fnt_gui_outline/fnt_gui_outline.yy",},},
     {"id":{"name":"fnt_gui","path":"fonts/fnt_gui/fnt_gui.yy",},},
     {"id":{"name":"GUI","path":"objects/GUI/GUI.yy",},},
     {"id":{"name":"obj_attract_block","path":"objects/obj_attract_block/obj_attract_block.yy",},},

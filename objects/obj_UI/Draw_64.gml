@@ -1,25 +1,15 @@
 /// @description Draw Health
 var _playerHealth = global.playerHealth;
 var _playerHealthMax = global.playerHealthMax;
-var _playerHealthFrac = frac(_playerHealth);
-_playerHealth -= _playerHealthFrac;
 
-for (var i = 1; i <= _playerHealthMax; i++)
-{
-	var _imageIndex = (i > _playerHealth);
-	if (i == _playerHealth + 1)
-	{
-		_imageIndex += (_playerHealthFrac > 0);
-		_imageIndex += (_playerHealthFrac > 0.25);
-		_imageIndex += (_playerHealthFrac > 0.5);
-	}
-	if (i <= 10)
-		{
-		draw_sprite(spr_health,_imageIndex,8 +((i-1) * 16), 8);
-		}
-		else
-		{
-			draw_sprite(spr_health,_imageIndex,-152 +((i-1) * 16), 24);
-		}
-	display_set_gui_size(RESOLUTION_W, RESOLUTION_H);
-}
+// Normal text
+font_enable_effects(fnt_gui, true, {
+	outlineEnable: true,
+	outlineDistance: 1.5,
+	outlineColour: c_blue
+});
+draw_set_font(fnt_gui);
+draw_set_color(c_white);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+draw_text(5, 5, $"{_playerHealth}");
