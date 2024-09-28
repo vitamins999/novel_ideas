@@ -1,19 +1,23 @@
 {
   "$GMObject":"",
-  "%Name":"obj_settings",
+  "%Name":"obj_knight",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_settings",
-  "overriddenProperties":[],
+  "name":"obj_knight",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_enemy","path":"objects/p_enemy/p_enemy.yy",},"propertyId":{"name":"enemyHP","path":"objects/p_enemy/p_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
+  ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Entities/Enemies.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"p_enemy",
+    "path":"objects/p_enemy/p_enemy.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -30,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_knight_idle",
+    "path":"sprites/spr_knight_idle/spr_knight_idle.yy",
+  },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
