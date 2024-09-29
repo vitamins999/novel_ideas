@@ -16,7 +16,7 @@ view_height = RESOLUTION_H;
 window_scale = 3;
 max_window_scale = floor(display_get_height() / view_height);
 
-display_set_gui_size(view_width * 2, view_height * 2);
+display_set_gui_size(view_width, view_height * 2);
 window_set_size(view_width * window_scale, view_height * window_scale);
 alarm[0] = 1;
 
