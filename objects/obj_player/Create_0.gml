@@ -17,6 +17,7 @@ z = 0;
 invulnerable = 0;
 flash = 0;
 flashShader = sh_white_flash;
+animationEndScript = -1;
 
 spriteRun = spr_player_run;
 spriteIdle = spr_player;
