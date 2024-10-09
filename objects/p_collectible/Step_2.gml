@@ -22,7 +22,15 @@ if ((instance_exists(obj_player)) && (entityAttract) && (input_check("activate")
 		fric = 0;
 		if (_dist < 5) // Collect radius
 		{
-			spd = 0;
+			if (collectScriptArg != -1)
+			{
+				script_execute(collectScript, collectScriptArg);
+			}
+			else
+			{
+				if (collectScript != -1) script_execute(collectScript);
+			}
+			instance_destroy();
 		}
 	}
 }
