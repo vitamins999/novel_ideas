@@ -1,7 +1,7 @@
 /// @description Entity Loop
 if (!global.gamePaused)
 {
-	depth = -bbox_bottom;
+	
 }
 flash = max(flash - 0.04, 0);
 
@@ -22,7 +22,7 @@ if ((instance_exists(obj_player)) && (entityAttract) && (global.attractBeingPres
 		direction = point_direction(x, y, _px, _py); // note: changing "direction" to "distance" repels the collectible away! (Could be useful for pushing)
 		spd = min(spd, 0.50);
 		fric = 0;
-		if (_dist < 10) // Proximity radius to stop movement
+		if (_dist < 14) // Proximity radius to stop movement
 		{
 			x += 0
 			y += 0;

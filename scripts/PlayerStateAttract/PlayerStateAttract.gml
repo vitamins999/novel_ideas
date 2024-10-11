@@ -9,6 +9,15 @@ function PlayerStateAttract(){
 		global.attractBeingPressed = true;
 	}
 	
+	//Movement
+	if (global.allowAttractMovement)
+	{
+		hSpeed = lengthdir_x(inputMagnitude * speedWalk, inputDirection);
+		vSpeed = lengthdir_y(inputMagnitude * speedWalk, inputDirection);
+
+		PlayerCollision();
+	}
+	
 	if (input_check_released("activate"))
 	{
 		global.attractBeingPressed = false;
