@@ -7,6 +7,7 @@ state = ENEMY_STATE.WANDER;
 sprMove = spr_editork;
 sprHurt = spr_editork_hurt;
 sprDie = spr_editork_die;
+sprAttract = spr_editork_blush;
 
 // Enemy Scripts
 enemyScript[ENEMY_STATE.WANDER] = EditorkWander;

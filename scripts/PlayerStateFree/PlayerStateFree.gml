@@ -32,4 +32,13 @@ function PlayerStateFree(){
 		state = PlayerStateAttack;
 		stateAttack = AttackSlash;
 	}
+	
+	//Activate Key Logic
+	if (keyActivate)
+	{
+		if (currentlyEquippedItem == "aftershave")
+		{
+			state = PlayerStateAttract;
+		}
+	}
 }
