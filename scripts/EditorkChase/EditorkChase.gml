@@ -25,5 +25,8 @@ function EditorkChase(){
 		
 		//Give up if player outside of range
 		if (_distanceToGo >= enemyGiveUpRange) state = ENEMY_STATE.WANDER;
+		
+		// Return to wander state if player dies
+		if (global.playerHealth <= 0) state = ENEMY_STATE.WANDER;
 	}
 }

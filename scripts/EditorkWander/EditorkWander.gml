@@ -42,7 +42,7 @@ function EditorkWander(){
 		}
 	
 		// Check for Aggro
-		if (++aggroCheck >= aggroCheckDuration)
+		if ((++aggroCheck >= aggroCheckDuration) && (global.playerHealth > 0))
 		{
 			aggroCheck = 0;
 			if (instance_exists(obj_player)) && (point_distance(x, y, obj_player.x, obj_player.y) <= enemyAggroRadius)
