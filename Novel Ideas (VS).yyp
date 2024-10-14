@@ -242,6 +242,7 @@
     {"id":{"name":"DarkKnightDie","path":"scripts/DarkKnightDie/DarkKnightDie.yy",},},
     {"id":{"name":"DarkKnightHurt","path":"scripts/DarkKnightHurt/DarkKnightHurt.yy",},},
     {"id":{"name":"DarkKnightWander","path":"scripts/DarkKnightWander/DarkKnightWander.yy",},},
+    {"id":{"name":"DrawSetText","path":"scripts/DrawSetText/DrawSetText.yy",},},
     {"id":{"name":"EditorkChase","path":"scripts/EditorkChase/EditorkChase.yy",},},
     {"id":{"name":"EditorkDie","path":"scripts/EditorkDie/EditorkDie.yy",},},
     {"id":{"name":"EditorkHurt","path":"scripts/EditorkHurt/EditorkHurt.yy",},},
