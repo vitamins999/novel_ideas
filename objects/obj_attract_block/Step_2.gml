@@ -22,7 +22,7 @@ if ((instance_exists(obj_player)) && (entityAttract) && (global.attractBeingPres
 		direction = point_direction(x, y, _px, _py); // note: changing "direction" to "distance" repels the collectible away! (Could be useful for pushing)
 		spd = min(spd, 0.50);
 		fric = 0;
-		if (_dist < 14) // Proximity radius to stop movement
+		if (_dist < 14) // Proximity radius to stop movement (NEEDS COLLISION DETECTION FOR ENEMIES)
 		{
 			x += 0
 			y += 0;
