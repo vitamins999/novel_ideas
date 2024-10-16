@@ -1,4 +1,4 @@
-if (keyboard_check_pressed(ord("Z")) && !window_get_fullscreen())
+if (keyboard_check_pressed(ord("G")) && !window_get_fullscreen())
 {
 	window_scale++;
 	if (window_scale > max_window_scale)

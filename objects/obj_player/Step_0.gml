@@ -5,8 +5,11 @@ keyRight = input_check("right");
 keyUp = input_check("up");
 keyDown = input_check("down");
 keyActivate = input_check("activate");
+keyActivatePressed = input_check_pressed("activate");
 keyAttack = input_check("attack");
 keyItem = input_check("special");
+keyItemSelectUp = keyboard_check_pressed(ord("Z"));
+keyItemSelectDown = keyboard_check_pressed(ord("X"));
 
 inputDirection = point_direction(0, 0, keyRight - keyLeft, keyDown - keyUp);
 inputMagnitude = (keyLeft - keyRight != 0) || (keyDown - keyUp != 0);

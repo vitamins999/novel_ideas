@@ -33,12 +33,39 @@ function PlayerStateFree(){
 		stateAttack = AttackSlash;
 	}
 	
-	//Activate Key Logic
-	if (keyActivate)
+	//Activate Key Logic Held Down
+	if (keyActivate) && (global.playerHasAnyItems) && (global.playerEquipped != ITEM.NONE)
 	{
-		if (currentlyEquippedItem == "aftershave")
+		switch (global.playerEquipped)
 		{
-			state = PlayerStateAttract;
+			case ITEM.AFTERSHAVE: state = PlayerStateAttract; break;
+			default: break;
+		}
+	}
+	
+	//Activate Key Logic Pressed
+	if (keyActivatePressed) && (global.playerHasAnyItems) && (global.playerEquipped != ITEM.NONE)
+	{
+		switch (global.playerEquipped)
+		{
+			case ITEM.RUBBER: state = PlayerStateRubber; break;
+			default: break;
+		}
+	}
+	
+	// Cycle Items
+	if (global.playerHasAnyItems)
+	{
+		var _cycleDirection = keyItemSelectUp - keyItemSelectDown;
+		if (_cycleDirection != 0)
+		{
+			do
+			{
+				global.playerEquipped += _cycleDirection;
+				if (global.playerEquipped < 1) global.playerEquipped = ITEM.TYPE_COUNT - 1;
+				if (global.playerEquipped >= ITEM.TYPE_COUNT) global.playerEquipped = 1;
+			}
+			until (global.playerItemUnlocked[global.playerEquipped]);
 		}
 	}
 }

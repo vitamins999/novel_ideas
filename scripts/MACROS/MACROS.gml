@@ -20,3 +20,11 @@ enum ENEMY_STATE
 	DIE,
 	WAIT
 }
+
+enum ITEM
+{
+	NONE,
+	AFTERSHAVE,
+	RUBBER,
+	TYPE_COUNT
+}
