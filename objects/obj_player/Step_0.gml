@@ -8,8 +8,8 @@ keyActivate = input_check("activate");
 keyActivatePressed = input_check_pressed("activate");
 keyAttack = input_check("attack");
 keyItem = input_check("special");
-keyItemSelectUp = keyboard_check_pressed(ord("Z"));
-keyItemSelectDown = keyboard_check_pressed(ord("X"));
+keyItemSelectUp = input_check_pressed("weapon_cycle_up");
+keyItemSelectDown = input_check_pressed("weapon_cycle_down");
 
 inputDirection = point_direction(0, 0, keyRight - keyLeft, keyDown - keyUp);
 inputMagnitude = (keyLeft - keyRight != 0) || (keyDown - keyUp != 0);
