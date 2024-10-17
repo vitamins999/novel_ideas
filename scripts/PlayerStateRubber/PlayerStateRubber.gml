@@ -7,6 +7,7 @@ function PlayerStateRubber(){
 		{
 			direction = other.direction;
 			direction = CARDINAL_DIR * 90;
+			global.controlled = CONTROL.RUBBER;
 		}
 	}
 	state = PlayerStateFree;

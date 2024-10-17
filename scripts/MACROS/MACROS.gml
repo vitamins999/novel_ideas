@@ -28,3 +28,9 @@ enum ITEM
 	RUBBER,
 	TYPE_COUNT
 }
+
+enum CONTROL
+{
+	PLAYER,
+	RUBBER
+}

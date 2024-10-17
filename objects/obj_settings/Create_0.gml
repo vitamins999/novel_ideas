@@ -4,6 +4,7 @@ randomise();
 temp_zoom_level = 0;
 
 global.gamePaused = false;
+global.controlled = CONTROL.PLAYER;
 global.playerHealthMax = 100;
 global.playerHealth = global.playerHealthMax;
 global.attractBeingPressed = false;

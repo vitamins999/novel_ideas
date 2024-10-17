@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"RubberFunctions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RubberFunctions",
+  "parent":{
+    "name":"Rubber",
+    "path":"folders/Scripts/Rubber.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

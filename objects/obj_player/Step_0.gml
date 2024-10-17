@@ -14,7 +14,7 @@ keyItemSelectDown = input_check_pressed("weapon_cycle_down");
 inputDirection = point_direction(0, 0, keyRight - keyLeft, keyDown - keyUp);
 inputMagnitude = (keyLeft - keyRight != 0) || (keyDown - keyUp != 0);
 
-if (!global.gamePaused)
+if (!global.gamePaused && global.controlled = CONTROL.PLAYER)
 {
 	script_execute(state);	
 	invulnerable = max(invulnerable - 1, 0);
