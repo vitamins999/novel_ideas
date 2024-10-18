@@ -11,7 +11,7 @@ if (!global.gamePaused)
 			{
 				//HurtEnemy(id, 50, other.id, 20);
 				instance_destroy(id);
-				_break = true;
+				//_break = true;
 			}
 			else
 			{
