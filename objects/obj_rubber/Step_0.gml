@@ -39,18 +39,18 @@ if (!global.gamePaused)
 	// Update Sprite
 	totalFrames = sprite_get_number(sprite_index) / 4;
 	image_index = localFrame + (CARDINAL_DIR * totalFrames);
-	localFrame += sprite_get_speed(sprite_index) / FRAME_RATE;
+	//localFrame += sprite_get_speed(sprite_index) / FRAME_RATE;
 	
 	//instance_create_depth(floor(x), floor(y), depth, obj_rubber_dust); -- trigger every 16x16 square changing
 
 	// Destroy if reaches end of animation
-	if (localFrame >= totalFrames)
-	{
-		DestroyRubber();
-	}
+	//if (localFrame >= totalFrames)
+	//{
+	//	DestroyRubber();
+	//}
 	
 	// Set Speed
-	speed = 1;
+	speed = 3;
 	
 	// Control Rubber
 	GetPlayerInputRubber();
