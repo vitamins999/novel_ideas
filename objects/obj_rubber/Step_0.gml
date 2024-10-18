@@ -9,7 +9,8 @@ if (!global.gamePaused)
 		{
 			if (object_is_ancestor(object_index, p_enemy))
 			{
-				HurtEnemy(id, 50, other.id, 20);
+				//HurtEnemy(id, 50, other.id, 20);
+				instance_destroy(id);
 				_break = true;
 			}
 			else
@@ -50,7 +51,7 @@ if (!global.gamePaused)
 	//}
 	
 	// Set Speed
-	speed = 3;
+	speed = 2;
 	
 	// Control Rubber
 	GetPlayerInputRubber();
