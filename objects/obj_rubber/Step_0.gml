@@ -9,8 +9,7 @@ if (!global.gamePaused)
 		{
 			if (object_is_ancestor(object_index, p_enemy))
 			{
-				//HurtEnemy(id, 50, other.id, 20);
-				instance_destroy(id);
+				HurtEnemy(id, 50, other.id, 20, "rubber");
 				//_break = true;
 			}
 			else
@@ -38,17 +37,19 @@ if (!global.gamePaused)
 	}
 
 	// Update Sprite
+	if (fadeSpeed == 2) sprite_index = spr_rubber_flash_faster;
 	totalFrames = sprite_get_number(sprite_index) / 4;
 	image_index = localFrame + (CARDINAL_DIR * totalFrames);
-	//localFrame += sprite_get_speed(sprite_index) / FRAME_RATE;
+	
+	if (fadeSpeed != 0) localFrame += sprite_get_speed(sprite_index) / FRAME_RATE;
 	
 	//instance_create_depth(floor(x), floor(y), depth, obj_rubber_dust); -- trigger every 16x16 square changing
 
 	// Destroy if reaches end of animation
-	//if (localFrame >= totalFrames)
-	//{
-	//	DestroyRubber();
-	//}
+	if (localFrame >= totalFrames && fadeSpeed == 2)
+	{
+		DestroyRubber();
+	}
 	
 	// Set Speed
 	speed = 2;

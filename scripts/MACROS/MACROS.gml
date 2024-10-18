@@ -18,6 +18,7 @@ enum ENEMY_STATE
 	ATTACK,
 	HURT,
 	DIE,
+	DIE_RUBBER,
 	WAIT
 }
 
