@@ -7,6 +7,7 @@ speed = 1;
 fadeSpeed = 0;
 alarm[0] = 60;
 alarm[1] = 120;
+alarm[2] = 240;
 
 // Setting animation to not animate, temporarily.
 image_speed = 0;
