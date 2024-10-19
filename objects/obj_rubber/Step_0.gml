@@ -1,5 +1,10 @@
 if (!global.gamePaused)
 {
+	// Tilemap Collision
+	/// Get New Tilemap
+	if (tilemap_get_at_pixel(layer_tilemap_get_id(layer_get_id("Col")), x, y)) DestroyRubber();
+	
+	// Entity Collision
 	var _entity = instance_place(x, y, p_entity);
 	var _break = false;
 
