@@ -6,7 +6,7 @@
   "name":"EditorkDie",
   "parent":{
     "name":"Editork",
-    "path":"folders/Scripts/Editork.yy",
+    "path":"folders/Scripts/Enemies/Editork.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

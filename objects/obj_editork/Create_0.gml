@@ -14,6 +14,7 @@ enemyScript[ENEMY_STATE.WANDER] = EditorkWander;
 enemyScript[ENEMY_STATE.CHASE] = EditorkChase;
 enemyScript[ENEMY_STATE.HURT] = EditorkHurt;
 enemyScript[ENEMY_STATE.DIE] = EditorkDie;
+enemyScript[ENEMY_STATE.DIE_RUBBER] = EditorkDieRubber;
 
 // Set up variables
 startFrame = choose(0, 4, 8);

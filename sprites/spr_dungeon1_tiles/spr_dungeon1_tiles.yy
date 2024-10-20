@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_dungeon1_tiles",
   "bboxMode":0,
-  "bbox_bottom":207,
+  "bbox_bottom":239,
   "bbox_left":0,
   "bbox_right":207,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1f542e35-b175-4b6c-9674-36113d43adc6","name":"1f542e35-b175-4b6c-9674-36113d43adc6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"82b2c2d5-e797-41fe-91b5-021ad89cd4b2","name":"82b2c2d5-e797-41fe-91b5-021ad89cd4b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":208,
+  "height":240,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"7338bd11-3733-43b3-ac57-3aa17987f2d6","blendMode":0,"displayName":"default","isLocked":false,"name":"7338bd11-3733-43b3-ac57-3aa17987f2d6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"91c36bc6-b284-4cd1-94bd-f0d86aff26e9","blendMode":0,"displayName":"default","isLocked":false,"name":"91c36bc6-b284-4cd1-94bd-f0d86aff26e9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_dungeon1_tiles",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1f542e35-b175-4b6c-9674-36113d43adc6","path":"sprites/spr_dungeon1_tiles/spr_dungeon1_tiles.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"74c145fb-eb54-4e92-acc2-611379faeba9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"82b2c2d5-e797-41fe-91b5-021ad89cd4b2","path":"sprites/spr_dungeon1_tiles/spr_dungeon1_tiles.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"35354c01-a134-4e7f-9c18-6ea9adb04397","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

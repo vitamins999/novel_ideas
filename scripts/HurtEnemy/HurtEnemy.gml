@@ -14,8 +14,7 @@ function HurtEnemy(_enemy, _damage, _source, _knockback, _weapon = "pencil"){
 			}
 			else if (enemyHP <= 0 && _weapon == "rubber")
 			{
-				instance_create_depth(x, y, depth, obj_editork_die_rubber);
-				instance_destroy();
+				state = ENEMY_STATE.DIE_RUBBER;
 			}
 			else
 			{

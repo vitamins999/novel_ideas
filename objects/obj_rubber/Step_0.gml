@@ -15,7 +15,7 @@ if (!global.gamePaused)
 			if (object_is_ancestor(object_index, p_enemy))
 			{
 				HurtEnemy(id, 50, other.id, 20, "rubber");
-				//_break = true;
+				if (id.breakRubberOnContact) _break = true;
 			}
 			else
 			{

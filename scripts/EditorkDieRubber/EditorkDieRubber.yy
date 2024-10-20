@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"EditorkDieRubber",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"EditorkDieRubber",
+  "parent":{
+    "name":"Editork",
+    "path":"folders/Scripts/Enemies/Editork.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

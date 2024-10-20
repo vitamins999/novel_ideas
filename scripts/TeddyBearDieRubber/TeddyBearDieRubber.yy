@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"TeddyBearDieRubber",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TeddyBearDieRubber",
+  "parent":{
+    "name":"TeddyBear",
+    "path":"folders/Scripts/Enemies/TeddyBear.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

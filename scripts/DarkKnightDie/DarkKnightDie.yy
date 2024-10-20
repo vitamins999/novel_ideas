@@ -6,7 +6,7 @@
   "name":"DarkKnightDie",
   "parent":{
     "name":"Dark Knight",
-    "path":"folders/Scripts/Dark Knight.yy",
+    "path":"folders/Scripts/Enemies/Dark Knight.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
