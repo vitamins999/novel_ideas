@@ -621,6 +621,7 @@
     {"id":{"name":"spr_tank_fire","path":"sprites/spr_tank_fire/spr_tank_fire.yy",},},
     {"id":{"name":"spr_tank","path":"sprites/spr_tank/spr_tank.yy",},},
     {"id":{"name":"spr_taxi","path":"sprites/spr_taxi/spr_taxi.yy",},},
+    {"id":{"name":"spr_teddy_bear_blush","path":"sprites/spr_teddy_bear_blush/spr_teddy_bear_blush.yy",},},
     {"id":{"name":"spr_teddy_bear_die","path":"sprites/spr_teddy_bear_die/spr_teddy_bear_die.yy",},},
     {"id":{"name":"spr_teddy_bear","path":"sprites/spr_teddy_bear/spr_teddy_bear.yy",},},
     {"id":{"name":"spr_teddy_die_rubber","path":"sprites/spr_teddy_die_rubber/spr_teddy_die_rubber.yy",},},

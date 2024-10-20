@@ -1,5 +1,5 @@
 // Draw shadow.  Looks shit on square arrows placeholder sprite.  Put back in for Stu.
-//draw_sprite(spr_shadow, 0, floor(x), floor(y));
+draw_sprite(spr_shadow, 0, floor(x), floor(y) - 1);
 
 if (invulnerable != 0) && ((invulnerable mod 8 < 2) == 0) && (flash == 0)
 {

@@ -7,7 +7,7 @@ state = ENEMY_STATE.WANDER;
 sprMove = spr_teddy_bear;
 sprHurt = spr_teddy_bear;
 sprDie = spr_teddy_bear_die;
-sprAttract = spr_teddy_bear;
+sprAttract = spr_teddy_bear_blush;
 
 // Enemy Scripts
 enemyScript[ENEMY_STATE.WANDER] = TeddyBearWander;
