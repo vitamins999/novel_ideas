@@ -16,3 +16,9 @@ enemyScript[ENEMY_STATE.DIE] = DarkKnightDie;
 startFrame = choose(0, 4, 8);
 endFrame = startFrame + 4;
 dieAnimationStarted = false;
+
+// Droplist Create
+entityDropList = array_create(array_length(global.entityDropListBasic));
+array_copy(entityDropList, 0, global.entityDropListBasic, 0, array_length(global.entityDropListBasic));
+// Check if Replace with Sharpener
+entityDropList = IsDropReplacedBySharpener(entityDropList);

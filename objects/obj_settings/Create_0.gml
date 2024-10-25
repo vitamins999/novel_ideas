@@ -10,6 +10,12 @@ global.playerHealth = global.playerHealthMax;
 global.attractBeingPressed = false;
 global.rubberInstanceExists = false;
 global.allowAttractMovement = false;
+global.playerAmmoMax[ITEM.RUBBER] = 15;
+
+//Pencil Power
+global.playerPencilPowerMax = 5;
+global.playerPencilPower = global.playerPencilPowerMax;
+global.playerPencilPowerMulti = 1;
 
 // Items
 global.playerHasAnyItems = false;
@@ -23,5 +29,15 @@ global.playerItemUnlocked[ITEM.AFTERSHAVE] = true;
 global.playerHasAnyItems = true;
 global.playerItemUnlocked[ITEM.RUBBER] = true;
 global.playerAmmo[ITEM.RUBBER] = 15;
+
+// Drop Lists
+global.entityDropListBasic = [
+[obj_coffee_collect],
+[obj_energy_drink_collect, obj_coffee_collect],
+[obj_rubber_collect],
+[obj_no_item]
+];
+
+global.entityDropListSharpener = [[obj_sharpener_collect]];
 
 global.iUI = instance_create_layer(0, 0, "GUI", obj_UI);

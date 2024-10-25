@@ -16,7 +16,7 @@ function CalcAttack(_collisionMask){
 				{
 					if (object_is_ancestor(object_index, p_enemy))
 					{
-						HurtEnemy(id, 5, other.id, 10);
+						HurtEnemy(id, global.playerPencilPower * global.playerPencilPowerMulti, other.id, 10);
 					}
 					if (entityHitScript != -1) script_execute(entityHitScript)
 				}

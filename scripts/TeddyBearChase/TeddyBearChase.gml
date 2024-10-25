@@ -8,7 +8,7 @@ function TeddyBearChase(){
 		var _distanceToGo = point_distance(x, y, xTo, yTo);
 		image_speed = 1.0;
 		dir = point_direction(x, y, xTo, yTo);
-		if (_distanceToGo > enemySpeed)
+		if (_distanceToGo > enemyChaseSpeed)
 		{
 			hSpeed = lengthdir_x(enemySpeed, dir);
 			vSpeed = lengthdir_y(enemySpeed, dir);

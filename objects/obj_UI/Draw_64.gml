@@ -45,3 +45,10 @@ if (global.playerHasAnyItems)
 		)
 	}
 }
+
+// Draw multi
+if (global.playerPencilPowerMulti > 1)
+{
+	DrawSetText(c_white, fnt_gui, fa_left, fa_bottom);
+	draw_text(5, RESOLUTION_H * 2, $"Pencil Power x {global.playerPencilPowerMulti}");
+}
