@@ -1,5 +1,6 @@
 function CollectHealth(_amount){
 	global.playerHealth = min(global.playerHealthMax, global.playerHealth + _amount);
+	instance_create_layer(obj_player.x, obj_player.y - 7, "Instances", obj_health_gain_animation);
 }
 
 function CollectRubber(_amount){
