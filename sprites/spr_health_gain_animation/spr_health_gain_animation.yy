@@ -12,17 +12,17 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d19c79c6-7fa0-4183-ae27-ea28d6adf960","name":"d19c79c6-7fa0-4183-ae27-ea28d6adf960","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"d5d08b31-58fa-4322-9271-365389b2011c","name":"d5d08b31-58fa-4322-9271-365389b2011c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"123d6930-2543-41b5-a231-8f658ae151a8","name":"123d6930-2543-41b5-a231-8f658ae151a8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"46898b99-c3a4-4be6-8e68-72d177891146","name":"46898b99-c3a4-4be6-8e68-72d177891146","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e9913bf4-d166-4ab9-bfe3-b7655234a2ab","name":"e9913bf4-d166-4ab9-bfe3-b7655234a2ab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"f6045cd8-5f96-4258-94c1-417bcf2630fc","name":"f6045cd8-5f96-4258-94c1-417bcf2630fc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"0b196527-9f33-4326-ac6e-8561c29ea7b2","name":"0b196527-9f33-4326-ac6e-8561c29ea7b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"0b79b944-1934-4e8e-af50-2d0bd27f2b04","name":"0b79b944-1934-4e8e-af50-2d0bd27f2b04","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":16,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"a5da8c39-60f6-458e-9197-af7df8aebbdf","blendMode":0,"displayName":"default","isLocked":false,"name":"a5da8c39-60f6-458e-9197-af7df8aebbdf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"44fc48a9-04b6-40c6-8c3b-ff32734d78e1","blendMode":0,"displayName":"default","isLocked":false,"name":"44fc48a9-04b6-40c6-8c3b-ff32734d78e1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_health_gain_animation",
   "nineSlice":null,
@@ -62,7 +62,7 @@
     },
     "name":"spr_health_gain_animation",
     "playback":1,
-    "playbackSpeed":15.0,
+    "playbackSpeed":10.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -72,17 +72,17 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d19c79c6-7fa0-4183-ae27-ea28d6adf960","path":"sprites/spr_health_gain_animation/spr_health_gain_animation.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2cfafc10-9ba3-4819-a2ab-f91a8003a103","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e9913bf4-d166-4ab9-bfe3-b7655234a2ab","path":"sprites/spr_health_gain_animation/spr_health_gain_animation.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c0e2d78f-74bb-455f-a95f-cb9245221d58","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d5d08b31-58fa-4322-9271-365389b2011c","path":"sprites/spr_health_gain_animation/spr_health_gain_animation.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7a136703-bf00-4d98-af3b-3e7afb5e5bf4","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f6045cd8-5f96-4258-94c1-417bcf2630fc","path":"sprites/spr_health_gain_animation/spr_health_gain_animation.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ef54d002-f699-4c04-9c27-8db01d064d2e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"123d6930-2543-41b5-a231-8f658ae151a8","path":"sprites/spr_health_gain_animation/spr_health_gain_animation.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"067b5f05-75a0-4550-9289-e0ffa44f80a9","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0b196527-9f33-4326-ac6e-8561c29ea7b2","path":"sprites/spr_health_gain_animation/spr_health_gain_animation.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c316be30-cdf9-4127-8f9c-d4bd11ace23d","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"46898b99-c3a4-4be6-8e68-72d177891146","path":"sprites/spr_health_gain_animation/spr_health_gain_animation.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9f4ddb08-b0c4-49aa-b577-86d5d9e41c6e","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0b79b944-1934-4e8e-af50-2d0bd27f2b04","path":"sprites/spr_health_gain_animation/spr_health_gain_animation.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"38c28c37-d65a-4900-94cb-83e19889caaf","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
