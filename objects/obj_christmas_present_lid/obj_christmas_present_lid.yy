@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_christmas_present_open",
-    "path":"sprites/spr_christmas_present_open/spr_christmas_present_open.yy",
+    "name":"spr_christmas_present_lid",
+    "path":"sprites/spr_christmas_present_lid/spr_christmas_present_lid.yy",
   },
   "spriteMaskId":null,
   "visible":true,
