@@ -18,9 +18,25 @@ function PlayerStateAttract(){
 		PlayerCollision();
 	}
 	
+	// Create aftershave puffs
+	if (!aftershavePuffsActive)
+	{
+		aftershavePuffsActive = true;
+		
+		puff_1 = instance_create_layer(x - 10, y - 10, "Instances", obj_aftershave_puff);
+		puff_2 = instance_create_layer(x + 10, y - 10, "Instances", obj_aftershave_puff);
+		puff_3 = instance_create_layer(x - 10, y + 10, "Instances", obj_aftershave_puff);
+		puff_4 = instance_create_layer(x + 10, y + 10, "Instances", obj_aftershave_puff);
+	}
+	
 	if (input_check_released("activate"))
 	{
 		global.attractBeingPressed = false;
+		aftershavePuffsActive = false;
+		instance_destroy(puff_1);
+		instance_destroy(puff_2);
+		instance_destroy(puff_3);
+		instance_destroy(puff_4);
 		sprite_index = spriteIdle;
 		state = PlayerStateFree;
 	}	

@@ -95,6 +95,7 @@
     {"id":{"name":"fnt_gui","path":"fonts/fnt_gui/fnt_gui.yy",},},
     {"id":{"name":"GUI","path":"objects/GUI/GUI.yy",},},
     {"id":{"name":"input_controller_object","path":"objects/input_controller_object/input_controller_object.yy",},},
+    {"id":{"name":"obj_aftershave_puff","path":"objects/obj_aftershave_puff/obj_aftershave_puff.yy",},},
     {"id":{"name":"obj_aftershave","path":"objects/obj_aftershave/obj_aftershave.yy",},},
     {"id":{"name":"obj_aircrew_1","path":"objects/obj_aircrew_1/obj_aircrew_1.yy",},},
     {"id":{"name":"obj_aircrew_2","path":"objects/obj_aircrew_2/obj_aircrew_2.yy",},},

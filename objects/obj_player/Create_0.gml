@@ -24,3 +24,5 @@ animationEndScript = -1;
 spriteRun = spr_player_run;
 spriteIdle = spr_player;
 localFrame = 0;
+
+aftershavePuffsActive = false;
