@@ -27,3 +27,5 @@ if (keyboard_check_pressed(ord("M")))
 {
 	global.allowAttractMovement = !global.allowAttractMovement;
 }
+
+if (global.scoreCurrent < global.scoreMax) global.scoreCurrent += 2;

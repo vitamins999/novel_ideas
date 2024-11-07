@@ -8,6 +8,7 @@
   "name":"obj_knight",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_enemy","path":"objects/p_enemy/p_enemy.yy",},"propertyId":{"name":"enemyHP","path":"objects/p_enemy/p_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_enemy","path":"objects/p_enemy/p_enemy.yy",},"propertyId":{"name":"killScore","path":"objects/p_enemy/p_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1000",},
   ],
   "parent":{
     "name":"Enemies",

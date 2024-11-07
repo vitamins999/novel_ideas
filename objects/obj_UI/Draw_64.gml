@@ -3,13 +3,17 @@ var _playerHealth = global.playerHealth;
 var _playerHealthMax = global.playerHealthMax;
 
 // Normal text
-font_enable_effects(fnt_gui, true, {
-	outlineEnable: true,
-	outlineDistance: 1.5,
-	outlineColour: c_blue
-});
+// OLD OUTLINE CODE IN CASE WE NEED IT
+//font_enable_effects(fnt_gui, true, {
+	//outlineEnable: true,
+	//outlineDistance: 1.5,
+	//outlineColour: c_blue
+//});
+//DrawSetText(c_white, fnt_gui, fa_left, fa_top);
+//draw_text(5, 5, $"{_playerHealth}");
+
 DrawSetText(c_white, fnt_gui, fa_left, fa_top);
-draw_text(5, 5, $"{_playerHealth}");
+DrawTextOutline(5, 30, $"{_playerHealth}", 2,c_green,4,20,500);
 
 if (global.gamePaused)
 {
@@ -25,7 +29,7 @@ if (global.allowAttractMovement)
 
 // Draw Item Box
 _xx = 8;
-_yy = 24;
+_yy = RESOLUTION_H * 1.8;
 
 draw_sprite(spr_item_ui_box, 0, _xx, _yy);
 if (global.playerHasAnyItems)

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DrawTextOutline",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DrawTextOutline",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

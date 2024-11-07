@@ -30,6 +30,11 @@ global.playerHasAnyItems = true;
 global.playerItemUnlocked[ITEM.RUBBER] = true;
 global.playerAmmo[ITEM.RUBBER] = 15;
 
+// Score
+global.scoreMax = 0;
+global.scoreCurrent = global.scoreMax;
+global.scoreAnimation = 0;
+
 // Drop Lists
 global.entityDropListBasic = [
 [obj_coffee_collect],
