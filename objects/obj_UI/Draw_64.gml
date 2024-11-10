@@ -17,8 +17,9 @@ DrawTextOutline(5, 30, $"{_playerHealth}", 2,c_green,4,20,500);
 
 if (global.gamePaused)
 {
-	DrawSetText(c_white, fnt_gui, fa_center, fa_middle);
-	draw_text(RESOLUTION_W, RESOLUTION_H, "PAUSED");
+	DrawSetText(c_white, fnt_pause, fa_center, fa_middle);
+	DrawTextOutline(RESOLUTION_W, RESOLUTION_H, "PAUSED",1,c_black,4,20,500)
+	//draw_text(RESOLUTION_W, RESOLUTION_H, "PAUSED");
 }
 
 if (global.allowAttractMovement)
