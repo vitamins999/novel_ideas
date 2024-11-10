@@ -4,4 +4,4 @@
 event_inherited();
 
 AddToScore(killScore);
-DisplayKillScore(killScore);
+DisplayKillScore(killScore, x, y);
