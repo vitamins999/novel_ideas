@@ -4,7 +4,7 @@ if (InsideView(id))
 	arrowID.y = y -15;
 	insideView = true;
 	
-	if (distance_to_object(obj_player) < 10)
+	if (distance_to_object(obj_player) < 1)
 	{
 		playerLocation = round(point_direction(x, y, obj_player.x, obj_player.y) / 90) mod 4;
 		

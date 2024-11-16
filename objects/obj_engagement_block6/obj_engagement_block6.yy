@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_men_at_work",
+  "%Name":"obj_engagement_block6",
   "eventList":[],
   "managed":true,
-  "name":"obj_men_at_work",
+  "name":"obj_engagement_block6",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entityAttract","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entityCollision","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Engagement_Puzzle",
+    "path":"folders/Objects/Engagement_Puzzle.yy",
   },
   "parentObjectId":{
     "name":"p_pushable",
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_men_at_work",
-    "path":"sprites/spr_men_at_work/spr_men_at_work.yy",
+    "name":"spr_engagement_block6",
+    "path":"sprites/spr_engagement_block6/spr_engagement_block6.yy",
   },
   "spriteMaskId":null,
   "visible":true,

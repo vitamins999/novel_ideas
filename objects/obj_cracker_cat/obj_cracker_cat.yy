@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_traffic_cone",
+  "%Name":"obj_cracker_cat",
   "eventList":[],
   "managed":true,
-  "name":"obj_traffic_cone",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entityCollision","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-  ],
+  "name":"obj_cracker_cat",
+  "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"p_pushable",
-    "path":"objects/p_pushable/p_pushable.yy",
+    "name":"p_enemy",
+    "path":"objects/p_enemy/p_enemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_traffic_cone",
-    "path":"sprites/spr_traffic_cone/spr_traffic_cone.yy",
+    "name":"spr_cracker_cat_right",
+    "path":"sprites/spr_cracker_cat_right/spr_cracker_cat_right.yy",
   },
   "spriteMaskId":null,
   "visible":true,
