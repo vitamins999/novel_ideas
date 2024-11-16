@@ -20,10 +20,10 @@ function __input_config_verbs()
             left:  [input_binding_key(vk_left),  input_binding_key("A")],
             right: [input_binding_key(vk_right), input_binding_key("D")],
             
-            activate:  input_binding_key(vk_space),
+            activate:  input_binding_key(vk_control),
             cancel:  input_binding_key(vk_backspace),
             attack:  input_binding_key(vk_shift),
-            special: input_binding_key(vk_enter),
+            special: input_binding_key(vk_space),
 			weapon_cycle_up: input_binding_key("X"),
 			weapon_cycle_down: input_binding_key("Z"),
             

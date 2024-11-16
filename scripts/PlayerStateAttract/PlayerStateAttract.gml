@@ -29,7 +29,7 @@ function PlayerStateAttract(){
 		puff_4 = instance_create_layer(x + 10, y + 10, "Instances", obj_aftershave_puff);
 	}
 	
-	if (input_check_released("activate"))
+	if (input_check_released("special"))
 	{
 		global.attractBeingPressed = false;
 		aftershavePuffsActive = false;

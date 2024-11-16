@@ -8,6 +8,7 @@ keyActivate = input_check("activate");
 keyActivatePressed = input_check_pressed("activate");
 keyAttack = input_check_pressed("attack");
 keyItem = input_check("special");
+keyItemPressed = input_check_pressed("special");
 keyItemSelectUp = input_check_pressed("weapon_cycle_up");
 keyItemSelectDown = input_check_pressed("weapon_cycle_down");
 

@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_taxi",
+  "%Name":"obj_arrow_up_down",
   "eventList":[],
   "managed":true,
-  "name":"obj_taxi",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entityCollision","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-  ],
+  "name":"obj_arrow_up_down",
+  "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"p_pushable",
-    "path":"objects/p_pushable/p_pushable.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_taxi",
-    "path":"sprites/spr_taxi/spr_taxi.yy",
+    "name":"spr_arrow_up_down",
+    "path":"sprites/spr_arrow_up_down/spr_arrow_up_down.yy",
   },
   "spriteMaskId":null,
   "visible":true,

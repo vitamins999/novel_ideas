@@ -21,7 +21,7 @@ function PlayerCollision(){
 	while (_entityCount > 0)
 	{
 		var _entityCheck = _entityList[| 0];
-		if (_entityCheck.entityCollision == true)
+		if (_entityCheck.entityCollision == true) && (_entityCheck.id != grabbed)
 		{
 			// Move as close as we can
 			if (sign(hSpeed) == -1)
@@ -66,7 +66,7 @@ function PlayerCollision(){
 	while (_entityCount > 0)
 	{
 		var _entityCheck = _entityList[| 0];
-		if (_entityCheck.entityCollision == true)
+		if (_entityCheck.entityCollision == true) && (_entityCheck.id != grabbed)
 		{
 			// Move as close as we can
 			if (sign(vSpeed) == -1)

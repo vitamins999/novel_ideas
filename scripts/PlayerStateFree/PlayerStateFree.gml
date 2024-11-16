@@ -25,6 +25,19 @@ function PlayerStateFree(){
 
 	// Update Image Index
 	PlayerAnimateSprite();
+	
+	//Activate Key for grab logic (NOTE: WILL NEED MORE IF PARAMETERS TO BE JUST PUSHABLE STUFF)
+	// Also: this works where you can hold it down and approach, and we want it to be only possible if you're against it.
+	if (keyActivate) && (direction mod 90 == 0)
+	{
+		var _grabX = x + lengthdir_x(3, direction);
+		var _grabY = y + lengthdir_y(3, direction);
+		grabbed = instance_position(_grabX, _grabY, p_pushable);
+		if (grabbed != noone)
+		{
+			state = PlayerStatePush;
+		}
+	}
 
 	//Attack Key Logic
 	if (keyAttack)
@@ -33,8 +46,8 @@ function PlayerStateFree(){
 		stateAttack = AttackSlash;
 	}
 	
-	//Activate Key Logic Held Down
-	if (keyActivate) && (global.playerHasAnyItems) && (global.playerEquipped != ITEM.NONE)
+	//Item Key Logic Held Down
+	if (keyItem) && (global.playerHasAnyItems) && (global.playerEquipped != ITEM.NONE)
 	{
 		switch (global.playerEquipped)
 		{
@@ -43,8 +56,8 @@ function PlayerStateFree(){
 		}
 	}
 	
-	//Activate Key Logic Pressed
-	if (keyActivatePressed) && (global.playerHasAnyItems) && (global.playerEquipped != ITEM.NONE)
+	//Item Key Logic Pressed
+	if (keyItemPressed) && (global.playerHasAnyItems) && (global.playerEquipped != ITEM.NONE)
 	{
 		switch (global.playerEquipped)
 		{

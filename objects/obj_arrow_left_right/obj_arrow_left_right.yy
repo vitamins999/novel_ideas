@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_healthbar",
+  "%Name":"obj_arrow_left_right",
   "eventList":[],
   "managed":true,
-  "name":"obj_healthbar",
+  "name":"obj_arrow_left_right",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_health_bar",
-    "path":"sprites/spr_health_bar/spr_health_bar.yy",
+    "name":"spr_arrow_left_right",
+    "path":"sprites/spr_arrow_left_right/spr_arrow_left_right.yy",
   },
   "spriteMaskId":null,
   "visible":true,
