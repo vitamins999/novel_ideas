@@ -1,5 +1,7 @@
 function PlayerStatePush(){
 	
+	global.objectCurrentlyBeingPushed = true;
+	
 	// Calculate movement
 	if (inputDirection == direction) || (inputDirection == direction - 180) || (inputDirection == direction + 180)
 	{
@@ -48,5 +50,6 @@ function PlayerStatePush(){
 	{
 		state = PlayerStateFree;
 		grabbed = noone;
+		global.objectCurrentlyBeingPushed = false;
 	}
 }

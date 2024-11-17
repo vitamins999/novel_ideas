@@ -8,6 +8,7 @@ global.controlled = CONTROL.PLAYER;
 global.playerHealthMax = 100;
 global.playerHealth = global.playerHealthMax;
 global.attractBeingPressed = false;
+global.objectCurrentlyBeingPushed = false;
 global.rubberInstanceExists = false;
 global.allowAttractMovement = false;
 global.playerAmmoMax[ITEM.RUBBER] = 15;
