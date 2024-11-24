@@ -12,6 +12,8 @@ waitDuration = 60;
 wait = 0;
 aggroCheck = 0;
 aggroCheckDuration = 5;
+stateWait = 0
+stateWaitDuration = 0;
 
 // Enemy Sprites
 sprMove = spr_editork;
@@ -23,4 +25,4 @@ enemyScript[ENEMY_STATE.CHASE] = -1;
 enemyScript[ENEMY_STATE.ATTACK] = -1;
 enemyScript[ENEMY_STATE.HURT] = -1;
 enemyScript[ENEMY_STATE.DIE] = -1;
-enemyScript[ENEMY_STATE.WAIT] = -1;
+enemyScript[ENEMY_STATE.WAIT] = EnemyWait;

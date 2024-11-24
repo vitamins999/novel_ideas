@@ -27,7 +27,7 @@ if (!global.gamePaused)
 			}
 		}
 	}
-	else if (state = ENEMY_STATE.WANDER)
+	else if (state == ENEMY_STATE.WANDER)
 	{
 		sprite_index = sprMove;
 	}

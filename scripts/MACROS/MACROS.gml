@@ -20,6 +20,7 @@ enum ENEMY_STATE
 	HURT,
 	DIE,
 	DIE_RUBBER,
+	RETREAT,
 	WAIT
 }
 
