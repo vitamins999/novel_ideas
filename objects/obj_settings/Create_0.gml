@@ -5,6 +5,8 @@ temp_zoom_level = 0;
 
 global.gamePaused = false;
 global.controlled = CONTROL.PLAYER;
+global.textSpeed = 0.75;
+global.isWarp = false;
 global.playerHealthMax = 100;
 global.playerHealth = global.playerHealthMax;
 global.attractBeingPressed = false;
@@ -43,6 +45,12 @@ global.entityDropListBasic = [
 [obj_rubber_collect],
 [obj_no_item]
 ];
+
+// Warps
+global.warpX = -1;
+global.warpY = -1;
+global.warpToX = -1;
+global.warpToY = -1;
 
 global.entityDropListSharpener = [[obj_sharpener_collect]];
 

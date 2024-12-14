@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Dungeon1Sign1",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Dungeon1Sign1",
+  "parent":{
+    "name":"Dialogue",
+    "path":"folders/Scripts/Activations/Dialogue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

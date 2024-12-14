@@ -38,6 +38,37 @@ function PlayerStateFree(){
 			state = PlayerStatePush;
 		}
 	}
+	
+	if (keyActivatePressed) && (direction == 90)
+	{
+		// Check if warp signpost
+		var _activateX = x + lengthdir_x(3, direction);
+		var _activateY = y + lengthdir_y(3, direction);
+		warpSignpost = instance_position(_activateX, _activateY, p_warp);
+		if (warpSignpost != noone)
+		{
+			script_execute_ext(warpSignpost.entityActivateScript, warpSignpost.entityActivateArgs);
+		}
+	}
+	
+	if (keyActivatePressed)
+	{
+		// Check if NPC
+		var _activateX = x + lengthdir_x(3, direction);
+		var _activateY = y + lengthdir_y(3, direction);
+		npc = instance_position(_activateX, _activateY, p_npc);
+		
+		if (npc != noone)
+		{
+			script_execute_ext(npc.entityActivateScript, npc.entityActivateArgs);
+			
+			with (npc)
+			{
+				direction = point_direction(x, y, other.x, other.y);
+				image_index = CARDINAL_DIR;
+			}
+		}
+	}
 
 	//Attack Key Logic
 	if (keyAttack)

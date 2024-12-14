@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DialogueResponses",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DialogueResponses",
+  "parent":{
+    "name":"Dialogue",
+    "path":"folders/Scripts/Activations/Dialogue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
