@@ -5,6 +5,7 @@ temp_zoom_level = 0;
 
 global.gamePaused = false;
 global.controlled = CONTROL.PLAYER;
+
 global.textSpeed = 0.75;
 global.isWarp = false;
 global.playerHealthMax = 100;
@@ -55,3 +56,6 @@ global.warpToY = -1;
 global.entityDropListSharpener = [[obj_sharpener_collect]];
 
 global.iUI = instance_create_layer(0, 0, "GUI", obj_UI);
+
+// Deactivate other camera zones
+instance_deactivate_layer("camera_christmas");

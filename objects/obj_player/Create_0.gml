@@ -5,7 +5,7 @@ lastState = state;
 
 currentlyEquippedItem = "aftershave";
 
-collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
+collisionMap = layer_tilemap_get_id(layer_get_id("col"));
 
 image_speed = 0;
 hSpeed = 0;
@@ -28,3 +28,8 @@ spriteIdle = spr_player;
 localFrame = 0;
 
 aftershavePuffsActive = false;
+
+moveToX = -1;
+moveToY = -1;
+movingWithoutPlayer = false;
+movingWithoutPlayerSpeed = 0.5;

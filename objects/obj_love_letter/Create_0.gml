@@ -27,7 +27,7 @@ retreatX = -1;
 retreatY = -1;
 
 // Droplist Create
-entityDropList = array_create(array_length(global.entityDropListBasic));
-array_copy(entityDropList, 0, global.entityDropListBasic, 0, array_length(global.entityDropListBasic));
+entityDropList = array_create(array_length(entityDropListBasic));
+array_copy(entityDropList, 0, entityDropListBasic, 0, array_length(entityDropListBasic));
 // Check if Replace with Sharpener
 entityDropList = IsDropReplacedBySharpener(entityDropList);

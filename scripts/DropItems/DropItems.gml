@@ -66,7 +66,8 @@ function IsRandomOddsTrue(_numerator, _denominator){
 function IsDropReplacedBySharpener(items){
 	if (IsRandomOddsTrue(10, 100))
 	{
-		return global.entityDropListSharpener;
+		//entityDropListSharpener = [[obj_sharpener_collect]];
+		return entityDropListSharpener;
 	}
 	else
 	{

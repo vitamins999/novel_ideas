@@ -26,7 +26,7 @@
   ],
   "name":"spr_signpost",
   "nineSlice":null,
-  "origin":9,
+  "origin":7,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -87,7 +87,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":11,
+    "xorigin":10,
     "yorigin":16,
   },
   "swatchColours":null,

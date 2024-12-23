@@ -26,8 +26,7 @@ function PlayerStateFree(){
 	// Update Image Index
 	PlayerAnimateSprite();
 	
-	//Activate Key for grab logic (NOTE: WILL NEED MORE IF PARAMETERS TO BE JUST PUSHABLE STUFF)
-	// Also: this works where you can hold it down and approach, and we want it to be only possible if you're against it.
+	//Activate Key for grab logic
 	if (keyActivate) && (direction mod 90 == 0)
 	{
 		var _grabX = x + lengthdir_x(3, direction);
@@ -111,5 +110,10 @@ function PlayerStateFree(){
 			}
 			until (global.playerItemUnlocked[global.playerEquipped]);
 		}
+	}
+	
+	if (movingWithoutPlayer)
+	{
+		state = PlayerStateMoveIntoPosition;
 	}
 }
