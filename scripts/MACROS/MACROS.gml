@@ -3,7 +3,7 @@
 #macro CARDINAL_DIR round(direction / 90)
 #macro VIEW_SCREEN view_camera[0]
 
-#macro RESOLUTION_W 240
+#macro RESOLUTION_W 320
 #macro RESOLUTION_H 180
 
 #macro TRANSITION_SPEED 0.02

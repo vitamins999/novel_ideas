@@ -59,3 +59,4 @@ global.iUI = instance_create_layer(0, 0, "GUI", obj_UI);
 
 // Deactivate other camera zones
 instance_deactivate_layer("camera_christmas");
+// instance_deactivate_layer("Tiles_Christmas");

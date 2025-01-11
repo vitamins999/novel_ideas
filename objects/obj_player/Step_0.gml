@@ -23,3 +23,4 @@ if (!global.gamePaused && global.controlled = CONTROL.PLAYER)
 }
 
 depth = -bbox_bottom;
+gpu_set_tex_filter(false);

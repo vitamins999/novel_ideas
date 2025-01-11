@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2dca47f4-aa3e-4cc2-aa53-10ee5c7deb87","name":"2dca47f4-aa3e-4cc2-aa53-10ee5c7deb87","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"8a47f6fe-128f-4027-a615-db0c14f667b4","name":"8a47f6fe-128f-4027-a615-db0c14f667b4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"39a542a8-ded1-4c91-b030-2f751192cfbb","name":"39a542a8-ded1-4c91-b030-2f751192cfbb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"bc7c2ce3-d3f7-48fd-996c-b0976728b2e3","name":"bc7c2ce3-d3f7-48fd-996c-b0976728b2e3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"f57a91a8-e17b-4f07-9beb-845e4cdf15f3","name":"f57a91a8-e17b-4f07-9beb-845e4cdf15f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"dc970409-6a4c-4bf3-9646-70f63ba665f1","name":"dc970409-6a4c-4bf3-9646-70f63ba665f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":16,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"d1c3789a-9668-4d0e-8880-ca697f0300ef","blendMode":0,"displayName":"default","isLocked":false,"name":"d1c3789a-9668-4d0e-8880-ca697f0300ef","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"ca8b64e2-99ea-4b7e-88ee-3406ce97d146","blendMode":0,"displayName":"default","isLocked":false,"name":"ca8b64e2-99ea-4b7e-88ee-3406ce97d146","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_christmas_tree",
   "nineSlice":null,
@@ -71,14 +71,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2dca47f4-aa3e-4cc2-aa53-10ee5c7deb87","path":"sprites/spr_christmas_tree/spr_christmas_tree.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"357a10d2-7725-4c07-991b-399530606098","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc7c2ce3-d3f7-48fd-996c-b0976728b2e3","path":"sprites/spr_christmas_tree/spr_christmas_tree.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"75d7bc0a-442b-49d2-9c28-79db48c40b98","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8a47f6fe-128f-4027-a615-db0c14f667b4","path":"sprites/spr_christmas_tree/spr_christmas_tree.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1d67e95a-1ed7-4ba9-bb4f-92742c358e0e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f57a91a8-e17b-4f07-9beb-845e4cdf15f3","path":"sprites/spr_christmas_tree/spr_christmas_tree.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ef32a961-9b96-437d-867c-99b4560a4b8f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"39a542a8-ded1-4c91-b030-2f751192cfbb","path":"sprites/spr_christmas_tree/spr_christmas_tree.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8720d654-cce6-4446-862c-a3f12d8ec960","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dc970409-6a4c-4bf3-9646-70f63ba665f1","path":"sprites/spr_christmas_tree/spr_christmas_tree.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8ab6a57b-65d3-46ab-8e58-3bbae6cd9e3a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
