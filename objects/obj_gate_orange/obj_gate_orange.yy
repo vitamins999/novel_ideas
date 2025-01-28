@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_love_interest",
+  "%Name":"obj_gate_orange",
   "eventList":[],
   "managed":true,
-  "name":"obj_love_interest",
+  "name":"obj_gate_orange",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_love_interest_new",
-    "path":"sprites/spr_love_interest_new/spr_love_interest_new.yy",
+    "name":"spr_gate_orange",
+    "path":"sprites/spr_gate_orange/spr_gate_orange.yy",
   },
   "spriteMaskId":null,
   "visible":true,

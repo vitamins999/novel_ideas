@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_editork_die_rubber",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_gate_purple",
+  "eventList":[],
   "managed":true,
-  "name":"obj_editork_die_rubber",
+  "name":"obj_gate_purple",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Entities/Enemies.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_editork_die_rubber",
-    "path":"sprites/spr_editork_die_rubber/spr_editork_die_rubber.yy",
+    "name":"spr_gate_purple",
+    "path":"sprites/spr_gate_purple/spr_gate_purple.yy",
   },
   "spriteMaskId":null,
   "visible":true,

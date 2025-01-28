@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_love_interest",
+  "%Name":"obj_janitor",
   "eventList":[],
   "managed":true,
-  "name":"obj_love_interest",
+  "name":"obj_janitor",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_love_interest_new",
-    "path":"sprites/spr_love_interest_new/spr_love_interest_new.yy",
+    "name":"spr_janitor",
+    "path":"sprites/spr_janitor/spr_janitor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

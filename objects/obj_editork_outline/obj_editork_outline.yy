@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_love_interest",
+  "%Name":"obj_editork_outline",
   "eventList":[],
   "managed":true,
-  "name":"obj_love_interest",
+  "name":"obj_editork_outline",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Entities/Enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_love_interest_new",
-    "path":"sprites/spr_love_interest_new/spr_love_interest_new.yy",
+    "name":"spr_editork_outline_new",
+    "path":"sprites/spr_editork_outline_new/spr_editork_outline_new.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -11,7 +11,7 @@
 
 //Fullscreen (SNES)
 view_width = RESOLUTION_W;
-view_height = RESOLUTION_H;
+view_height = RESOLUTION_H - 4;
 
 window_scale = 3;
 max_window_scale = floor(display_get_height() / view_height);
