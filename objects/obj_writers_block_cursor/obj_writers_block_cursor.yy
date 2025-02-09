@@ -1,7 +1,11 @@
 {
   "$GMObject":"",
   "%Name":"obj_writers_block_cursor",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_writers_block_cursor",
   "overriddenProperties":[],
@@ -28,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_writers_block_cursor_complete",
-    "path":"sprites/spr_writers_block_cursor_complete/spr_writers_block_cursor_complete.yy",
+    "name":"spr_writers_block_cursor",
+    "path":"sprites/spr_writers_block_cursor/spr_writers_block_cursor.yy",
   },
   "spriteMaskId":null,
   "visible":true,
