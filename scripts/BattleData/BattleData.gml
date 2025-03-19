@@ -1,0 +1,2 @@
+global.currentSentence = "";
+global.enemyWordsInSentence = [];

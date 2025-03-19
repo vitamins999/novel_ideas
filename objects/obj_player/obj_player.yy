@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player",
-    "path":"sprites/spr_player/spr_player.yy",
+    "name":"spr_player_battle",
+    "path":"sprites/spr_player_battle/spr_player_battle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

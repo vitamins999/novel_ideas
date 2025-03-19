@@ -1,0 +1,1 @@
+draw_sprite_stretched(spr_battle_box_paper, 0, x, y, 245, 60);
