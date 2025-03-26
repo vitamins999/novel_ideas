@@ -1,3 +1,5 @@
+image_speed = 0.5
+
 units = [];
 turn = 0;
 unitTurnOrder = [];
