@@ -1,14 +1,31 @@
+/// @description Insert description here
+// You can write your code in this editor
 scribbleObject = scribble(wordStrNew);
 
-scribbleObject.starting_format("fnt_battle_sentence", c_black);
+customColour = c_black;
 
-if (!invisible)
+if (owner == OWNER.PLAYER)
 {
-	scribbleObject.blend(c_red, 1);
+	customColour = #43d702;
+}
+else if (owner == OWNER.ENEMY)
+{
+	customColour = c_red;
 }
 else
 {
-	scribbleObject.blend(c_red, 0);
+	customColour = c_black;
+}
+
+scribbleObject.starting_format("fnt_battle_sentence", customColour);
+
+if (!invisible)
+{
+	scribbleObject.blend(customColour, 1);
+}
+else
+{
+	scribbleObject.blend(customColour, 0);
 }
 	
 scribbleObject.draw(x, y);

@@ -26,7 +26,7 @@ if (keyboard_check_pressed(ord("R")))
 if (keyboard_check_pressed(ord("B")))
 {
 	instance_deactivate_object(obj_player);
-	NewEncounter([global.enemies.loveTriangle], ["\"Cats are _____,\" said the _____, and this sentence is really really long _____."], [["_____"]], "Haha! I am an evil bastard!", "Andross! I failed youooououuuu argghh!"
+	NewEncounter([global.enemies.loveTriangle], ["\"Cats are &_____,\" said the &_____, and this sentence is really really &_____."], "Haha! I am an evil bastard!", "Andross! I failed youooououuuu argghh!", "Fuck you, Grandad!"
 	);
 }
 

@@ -91,6 +91,7 @@ global.party =
 [
 	{
 		name: "Stu",
+		isPlayerControlled: true,
 		hp: 100,
 		hpMax: 100,
 		strength: 6,
@@ -113,11 +114,13 @@ global.enemyWords =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.GRASS,
+		wordType: TYPE.GRASS,
 		obtained: true,
+		available: true,
 		func: function(_user, _targets)
 		{
 			BattleWordInsertEnemy(global.enemyWords.hedge, _targets[0]);
+			global.enemyWords.hedge.available = false;
 		}
 	},
 	
@@ -133,11 +136,13 @@ global.enemyWords =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.FIRE,
+		wordType: TYPE.FIRE,
 		obtained: true,
+		available: true,
 		func: function(_user, _targets)
 		{
 			BattleWordInsertEnemy(global.enemyWords.campfire, _targets[0]);
+			global.enemyWords.campfire.available = false;
 		}
 	},
 	
@@ -153,11 +158,37 @@ global.enemyWords =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.WATER,
+		wordType: TYPE.WATER,
 		obtained: true,
+		available: true,
 		func: function(_user, _targets)
 		{
 			BattleWordInsertEnemy(global.enemyWords.pond, _targets[0]);
+			global.enemyWords.pond.available = false;
+		}
+	}
+}
+
+global.enemyActions =
+{
+	noWords:
+	{
+		name: "No Words",
+		hp: 0,
+		description: "{0} has run out of words!",
+		subMenu: "Dictionary",
+		targetRequired: true,
+		targetEnemyByDefault: true,
+		targetAll: MODE.NEVER,
+		userAnimation: "attack",
+		effectSprite: spr_attack_bonk,
+		effectOnTarget: MODE.ALWAYS,
+		wordType: TYPE.NORMAL,
+		obtained: true,
+		available: true,
+		func: function(_user, _targets)
+		{
+			show_debug_message("No words!");
 		}
 	}
 }
@@ -168,24 +199,85 @@ global.enemies =
 	loveTriangle:
 	{
 		name: "Love Triangle",
+		isPlayerControlled: false,
 		hp: 10,
 		hpMax: 10,
 		sprites: {idle: spr_love_triangle},
 		actions: [global.enemyWords.hedge, global.enemyWords.campfire, global.enemyWords.pond],
 		AIscript: function()
 		{
-			// Put random enemy word in a random available blank space
-			var _action = actions[irandom(array_length(actions) - 1)];
-			var _possibleTargets = array_filter(obj_battle.enemyWordsInstanceIDArr, function(_id)
-			{
-				return (_id.wordStr == "_____");
-			});
+			var _action = -1;
+			var _possibleTargets;
+			var _target;
 			
-			var _target
+			var _availableActions = [];
 			
-			if (array_length(_possibleTargets) != 0)
+			for (var _l = 0; _l < array_length(actions); _l++)
 			{
+				if (actions[_l].available == true) array_push(_availableActions, actions[_l]);
+			}
+			
+			// If enemy has used up all its move, then it does NOTHING.
+			if (array_length(_availableActions) <= 0)
+			{
+				_action = global.enemyActions.noWords;
+				_possibleTargets = obj_battle.playerWordsInstanceIDArr;
 				_target = _possibleTargets[irandom(array_length(_possibleTargets) - 1)];
+			}
+			
+			// Otherwise...
+			// Put random enemy word in a random available blank space if it exists
+			if (array_length(obj_battle.blankWordsInstanceIDArr) > 0)
+			{
+				_possibleTargets = obj_battle.blankWordsInstanceIDArr;
+				_target = _possibleTargets[irandom(array_length(_possibleTargets) - 1)];
+				
+				_action = _availableActions[irandom(array_length(_availableActions) - 1)];
+			}
+			else
+			{
+				_possibleTargets = obj_battle.playerWordsInstanceIDArr;
+				
+				for (var _p = 0; _p < array_length(_possibleTargets); _p++)
+				{
+					var _targetType = _possibleTargets[_p].wordData.wordType;
+					var _weaknessArr = [];
+					
+					var gridHeight = ds_grid_height(global.type_grid);
+					for (var _y = 0; _y < gridHeight; _y++) 
+					{
+						var _value = ds_grid_get(global.type_grid, _targetType, _y);
+					
+						if (_value == 2)
+						{
+							array_push(_weaknessArr, _y);
+						}
+					}
+				
+					if (array_length(_weaknessArr) > 0)
+					{
+						for (var _i = 0; _i < array_length(_availableActions); _i++)
+						{
+							for (var _j = 0; _j < array_length(_weaknessArr); _j++)
+							{
+								if (_availableActions[_i].wordType == _weaknessArr[_j])
+								{
+									_target = _possibleTargets[_p];
+									_action = _availableActions[_i];
+								}
+							}
+						}
+					}
+			
+				}
+				
+				// If it can't find an available attack that's strong against the player
+				// then it chooses a random available attack
+				if (_action == -1)
+				{
+					_target = _possibleTargets[irandom(array_length(_possibleTargets) - 1)];
+					_action = _availableActions[irandom(array_length(_availableActions) - 1)];
+				}
 			}
 			
 			return [_action, _target];
@@ -216,7 +308,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.NORMAL,
+		wordType: TYPE.NORMAL,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -237,7 +329,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.FIRE,
+		wordType: TYPE.FIRE,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -258,7 +350,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.WATER,
+		wordType: TYPE.WATER,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -279,7 +371,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.ELECTRIC,
+		wordType: TYPE.ELECTRIC,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -301,7 +393,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.GRASS,
+		wordType: TYPE.GRASS,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -322,7 +414,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.ICE,
+		wordType: TYPE.ICE,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -343,7 +435,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.FIGHTING,
+		wordType: TYPE.FIGHTING,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -364,7 +456,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.POISON,
+		wordType: TYPE.POISON,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -385,7 +477,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.GROUND,
+		wordType: TYPE.GROUND,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -406,7 +498,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.FLYING,
+		wordType: TYPE.FLYING,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -427,7 +519,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.PSYCHIC,
+		wordType: TYPE.PSYCHIC,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -448,7 +540,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.BUG,
+		wordType: TYPE.BUG,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -469,7 +561,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.ROCK,
+		wordType: TYPE.ROCK,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -490,7 +582,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.GHOST,
+		wordType: TYPE.GHOST,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -511,7 +603,7 @@ global.words =
 		userAnimation: "attack",
 		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
-		type: TYPE.DRAGON,
+		wordType: TYPE.DRAGON,
 		obtained: true,
 		available: true,
 		func: function(_user, _targets)
@@ -533,8 +625,8 @@ global.items =
 		targetEnemyByDefault: true,
 		targetAll: MODE.NEVER,
 		userAnimation: "attack",
-		//effectSprite: "",
-		effectOnTarget: MODE.ALWAYS,
+		effectSprite: spr_attack_bonk,
+		effectOnTarget: MODE.NEVER,
 		available: true,
 		func: function()
 		{
@@ -551,7 +643,7 @@ global.items =
 		targetEnemyByDefault: true,
 		targetAll: MODE.NEVER,
 		userAnimation: "attack",
-		//effectSprite: "",
+		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
 		available: true,
 		func: function()
@@ -569,7 +661,7 @@ global.items =
 		targetEnemyByDefault: true,
 		targetAll: MODE.NEVER,
 		userAnimation: "attack",
-		//effectSprite: "",
+		effectSprite: spr_attack_bonk,
 		effectOnTarget: MODE.ALWAYS,
 		available: true,
 		func: function()

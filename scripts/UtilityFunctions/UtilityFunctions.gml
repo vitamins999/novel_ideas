@@ -78,3 +78,68 @@ function CovertStringToFormattedArrayOfWords(_string)
     
     return tokens;
 }
+
+/// @function checkStringType(inputStr)
+/// @param inputStr The input string to check.
+/// @returns "blank" if the first character is "&", "player" if it is "^",
+///          "enemy" if it is "~", and "none" otherwise.
+function checkStringType(inputStr) {
+    // Ensure the string has at least one character.
+    if (string_length(inputStr) < 1) {
+        return OWNER.NONE;
+    }
+    
+    // Get the first character of the string.
+    var firstChar = string_copy(inputStr, 1, 1);
+    
+    // Determine the return value based on the first character.
+    if (firstChar == "&") {
+        return OWNER.BLANK;
+    } else if (firstChar == "^") {
+        return OWNER.PLAYER;
+    } else if (firstChar == "~") {
+        return OWNER.ENEMY;
+    } else {
+        return OWNER.NONE;
+    }
+}
+
+function RemoveOwnerFormatting(inputStr) {
+    // Ensure the string has at least one character.
+    if (string_length(inputStr) < 1) {
+        return inputStr;
+    }
+    
+    // Get the first character.
+    var firstChar = string_copy(inputStr, 1, 1);
+    
+    // Check if it's one of the special characters.
+    if (firstChar == "&" || firstChar == "^" || firstChar == "~") {
+        // Return the string without the first character.
+        return string_copy(inputStr, 2, string_length(inputStr) - 1);
+    }
+    
+    // If no special character, return the string as is.
+    return inputStr;
+}
+
+function RemoveFormattingFromSentence(sentence) {
+    // Split the sentence into an array of words using space as the delimiter.
+    var words = string_split(sentence, " ");
+    
+    // Loop through each word and remove formatting if necessary.
+    for (var i = 0; i < array_length(words); i++) {
+        words[i] = RemoveOwnerFormatting(words[i]);
+    }
+    
+    // Reconstruct the sentence by joining the words with spaces.
+    var result = "";
+    for (var i = 0; i < array_length(words); i++) {
+        result += words[i];
+        if (i < array_length(words) - 1) {
+            result += " ";
+        }
+    }
+    
+    return result;
+}

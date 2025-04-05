@@ -145,6 +145,7 @@
     {"id":{"name":"obj_battle_menu","path":"objects/obj_battle_menu/obj_battle_menu.yy",},},
     {"id":{"name":"obj_battle_sentence_full","path":"objects/obj_battle_sentence_full/obj_battle_sentence_full.yy",},},
     {"id":{"name":"obj_battle_sentence","path":"objects/obj_battle_sentence/obj_battle_sentence.yy",},},
+    {"id":{"name":"obj_battle_timer_end","path":"objects/obj_battle_timer_end/obj_battle_timer_end.yy",},},
     {"id":{"name":"obj_battle_unit_enemy","path":"objects/obj_battle_unit_enemy/obj_battle_unit_enemy.yy",},},
     {"id":{"name":"obj_battle_unit_pc","path":"objects/obj_battle_unit_pc/obj_battle_unit_pc.yy",},},
     {"id":{"name":"obj_battle_unit","path":"objects/obj_battle_unit/obj_battle_unit.yy",},},

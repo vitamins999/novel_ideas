@@ -1,7 +1,8 @@
-image_speed = 0.5
+image_speed = 0.165;
 
 units = [];
 turn = 0;
+currentTurn = noone;
 unitTurnOrder = [];
 unitRenderOrder = [];
 turnCount = 0;
@@ -9,7 +10,7 @@ roundCount = 0;
 battleWaitTimeFrames = 30;
 battleWaitTimeRemaining = 0;
 battleText = "";
-currentUser = noone;
+nextTurnIsPlayer = noone;
 currentAction = -1;
 currentTargets = noone;
 currentSentenceNumber = 0;
@@ -18,13 +19,20 @@ generateWordObjects = false;
 wordInstanceIDArr = [];
 
 populateEnemyWordsInstanceIDArray = false;
+playerWordsInstanceIDArr = [];
 enemyWordsInstanceIDArr = [];
+blankWordsInstanceIDArr = [];
+targetWordsInstanceIDArr = [];
 
 showOpeningEnemyMessage = true;
 closeOpeningEnemyMessage = false;
 
 showEndingEnemyMessage = true;
 closeEndingEnemyMessage = false;
+
+battleStateToEndFreeState = -1;
+
+winner = noone;
 
 // Make targeting cursor
 cursor = 
@@ -70,6 +78,10 @@ RefreshRenderOrder();
 
 function BattleStateSelectAction()
 {
+	// If current turn is not player controlled (aka enemy), next turn
+	// must be player, and vise versa.
+	nextTurnIsPlayer = !unitTurnOrder[turn].isPlayerControlled;
+	
 	if (!instance_exists(obj_battle_menu))
 	{
 		// Get Current Unit
@@ -231,17 +243,20 @@ function BattleStateTurnProgression()
 }
 
 function BattleStateGenerateSentence()
-{
+{	
+	var _formattedTextStrWithoutOwners = RemoveFormattingFromSentence(enemySentencesArr[currentSentenceNumber]);
 	var _battleSentence = instance_create_depth(x + 45, y + 60, depth - 10, obj_battle_sentence,
 		{
-			textStr: enemySentencesArr[currentSentenceNumber]
+			textStr: _formattedTextStrWithoutOwners
 		});
 	
 	textArr = CovertStringToFormattedArrayOfWords(enemySentencesArr[currentSentenceNumber]);
 	
 	for (var i = 0; i < array_length(textArr); i++)
 	{
-		var _word = instance_create_depth(_battleSentence.x + 10, _battleSentence.y + 5, _battleSentence.depth - 10, obj_battle_word, {wordStr: textArr[i]});
+		var _owner = checkStringType(textArr[i]);
+		
+		var _word = instance_create_depth(_battleSentence.x + 10, _battleSentence.y + 5, _battleSentence.depth - 10, obj_battle_word, {wordStr: textArr[i], owner: _owner});
 		array_push(wordInstanceIDArr, _word);
 	}
 	
@@ -253,6 +268,9 @@ function BattleStateGenerateSentence()
 // Beginning Battle State
 function BattleStateBeginBattle()
 {
+	// Set nextTurnIsPlayer to true if player is first in turn order
+	nextTurnIsPlayer = unitTurnOrder[turn].isPlayerControlled;
+	
 	if (input_check_pressed("activate") && !showOpeningEnemyMessage) closeOpeningEnemyMessage = true;
 	
 	// Enemy says something
@@ -269,12 +287,28 @@ function BattleStateBeginBattle()
 // Ending Battle State
 function BattleStateEndBattle()
 {
+	if (instance_exists(obj_battle_sentence))
+	{
+		instance_destroy(obj_battle_sentence);
+		instance_destroy(obj_battle_sentence_full);
+		instance_destroy(obj_battle_word);
+		instance_destroy(obj_battle_word_new);
+	}
+	
 	if (input_check_pressed("activate") && !showEndingEnemyMessage) closeEndingEnemyMessage = true;
 	
 	// Enemy says something
 	if (showEndingEnemyMessage)
 	{
-		NewTextBox(endingEnemyMessage, 2)
+		if (winner == "player")
+		{
+			NewTextBox(endingEnemyMessage, 2)
+		}
+		else if (winner == "enemy")
+		{
+			NewTextBox(endingEnemyMessageLose, 2)
+		}
+
 		showEndingEnemyMessage = false;
 	}
 	
@@ -286,6 +320,12 @@ function BattleStateEndBattle()
 		// Destroy Battle
 		instance_destroy();
 	}
+}
+
+// Free State for Pausing Ending
+function BattleStateFree()
+{
+	
 }
 
 battleState = BattleStateBeginBattle;

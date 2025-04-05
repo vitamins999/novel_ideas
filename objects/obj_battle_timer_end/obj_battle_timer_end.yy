@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_battle_word_new",
+  "%Name":"obj_battle_timer_end",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_battle_word_new",
+  "name":"obj_battle_timer_end",
   "overriddenProperties":[],
   "parent":{
     "name":"Battle",
     "path":"folders/Objects/Battle.yy",
   },
-  "parentObjectId":{
-    "name":"obj_battle_word",
-    "path":"objects/obj_battle_word/obj_battle_word.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

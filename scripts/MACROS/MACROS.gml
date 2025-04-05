@@ -37,3 +37,10 @@ enum CONTROL
 	PLAYER,
 	RUBBER
 }
+enum OWNER 
+{
+	NONE,
+	BLANK,
+	PLAYER,
+	ENEMY
+}

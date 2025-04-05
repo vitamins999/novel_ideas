@@ -82,8 +82,8 @@ function MenuSelectAction(_user, _action)
 				if (_action.targetEnemyByDefault) // Target enemy by default
 				{
 					targetIndex = 0;
-					targetSide = obj_battle.enemyWordsInstanceIDArr;
-					activeTarget = obj_battle.enemyWordsInstanceIDArr[targetIndex];
+					targetSide = obj_battle.targetWordsInstanceIDArr;
+					activeTarget = obj_battle.targetWordsInstanceIDArr[targetIndex];
 				}
 				else // Target self by default
 				{

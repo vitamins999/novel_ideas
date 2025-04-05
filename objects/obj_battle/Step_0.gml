@@ -2,7 +2,7 @@
 battleState();
 
 // Cursor control
-if (cursor.active && array_length(enemyWordsInstanceIDArr) > 0)
+if (cursor.active && array_length(targetWordsInstanceIDArr) > 0)
 {
 	with (cursor)
 	{
@@ -21,9 +21,9 @@ if (cursor.active && array_length(enemyWordsInstanceIDArr) > 0)
 		var _moveH = _keyRight - _keyLeft;
 		var _moveV = _keyDown - _keyUp;
 		
-		if (_moveH == -1) targetSide = obj_battle.partyUnits;
+		//if (_moveH == -1) targetSide = obj_battle.partyUnits;
 		//if (_moveH == 1) targetSide = obj_battle.enemyUnits;
-		if (_moveH == 1) targetSide = obj_battle.enemyWordsInstanceIDArr;
+		//if (_moveH == 1) targetSide = obj_battle.targetWordsInstanceIDArr;
 		
 		// Verify target list (so dead enemies can't be targeted)
 		//if (targetSide == obj_battle.enemyUnits)
@@ -108,30 +108,63 @@ if (generateWordObjects)
 // Populate enemy words ID array
 if (populateEnemyWordsInstanceIDArray)
 {
+	// Erase all data in the word arrays by setting sizes to 0.
 	if (array_length(enemyWordsInstanceIDArr) > 0)
 	{
 		array_resize(enemyWordsInstanceIDArr, 0);
 	}
 	
-	for (var i = 0; i < array_length(enemyWordsInSentencesArr[currentSentenceNumber]); i++)
+	if (array_length(playerWordsInstanceIDArr) > 0)
 	{
-		for (var j = 0; j < array_length(wordInstanceIDArr); j++)
+		array_resize(playerWordsInstanceIDArr, 0);
+	}
+	
+	if (array_length(blankWordsInstanceIDArr) > 0)
+	{
+		array_resize(blankWordsInstanceIDArr, 0);
+	}
+	
+	if (array_length(targetWordsInstanceIDArr) > 0)
+	{
+		array_resize(targetWordsInstanceIDArr, 0);
+	}
+	
+	if (nextTurnIsPlayer)
+	{
+		for (var _i = 0; _i < array_length(wordInstanceIDArr); _i++)
 		{
-			if (string_lower(enemyWordsInSentencesArr[currentSentenceNumber][i]) == string_lower(wordInstanceIDArr[j].wordStr))
-			{
-				// Loop through remaining words in sentence and add their IDs
-				// to an array in the THIS word
-				for (var k = j + 1; k < array_length(wordInstanceIDArr); k++)
-				{
-					if (k == array_length(wordInstanceIDArr)) break;
-					
-					array_push(wordInstanceIDArr[j].remainingWordsInSentence, wordInstanceIDArr[k]);
-				}
-				
-				array_push(enemyWordsInstanceIDArr, wordInstanceIDArr[j]);
-				
-			}
+			if (wordInstanceIDArr[_i].owner == OWNER.BLANK) array_push(blankWordsInstanceIDArr, wordInstanceIDArr[_i]);
+			if (wordInstanceIDArr[_i].owner == OWNER.ENEMY) array_push(enemyWordsInstanceIDArr, wordInstanceIDArr[_i]);
+			if (wordInstanceIDArr[_i].owner == OWNER.PLAYER) array_push(playerWordsInstanceIDArr, wordInstanceIDArr[_i]);
+			
+			if (wordInstanceIDArr[_i].owner == OWNER.BLANK || wordInstanceIDArr[_i].owner == OWNER.ENEMY) array_push(targetWordsInstanceIDArr, wordInstanceIDArr[_i]);
 		}
+	}
+	else
+	{
+		for (var _i = 0; _i < array_length(wordInstanceIDArr); _i++)
+		{
+			if (wordInstanceIDArr[_i].owner == OWNER.BLANK) array_push(blankWordsInstanceIDArr, wordInstanceIDArr[_i]);
+			if (wordInstanceIDArr[_i].owner == OWNER.PLAYER) array_push(playerWordsInstanceIDArr, wordInstanceIDArr[_i]);
+			if (wordInstanceIDArr[_i].owner == OWNER.ENEMY) array_push(enemyWordsInstanceIDArr, wordInstanceIDArr[_i]);
+			
+			if (wordInstanceIDArr[_i].owner == OWNER.BLANK || wordInstanceIDArr[_i].owner == OWNER.ENEMY) array_push(targetWordsInstanceIDArr, wordInstanceIDArr[_i]);
+		}
+	}
+	
+	// Check if Player has won battle by having 0 blanks and 0 enemy words.
+	if (array_length(blankWordsInstanceIDArr) <= 0 && array_length(enemyWordsInstanceIDArr) <= 0)
+	{
+		winner = "player";
+		instance_create_depth(x, y, depth, obj_battle_timer_end, {time: 120})
+		battleState = BattleStateFree;
+	}
+	// Check if Enemy has won battle by having 0 blanks and 0 player words.
+	else if (array_length(blankWordsInstanceIDArr) <= 0 && array_length(playerWordsInstanceIDArr) <= 0)
+	{
+		winner = "enemy";
+		instance_create_depth(x, y, depth, obj_battle_timer_end, {time: 120})
+		battleState = BattleStateFree;
 	}
 	
 	populateEnemyWordsInstanceIDArray = false;
