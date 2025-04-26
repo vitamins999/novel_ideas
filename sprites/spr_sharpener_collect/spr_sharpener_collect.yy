@@ -42,7 +42,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_sharpener_collect",
     "autoRecord":true,
     "backdropHeight":768,
@@ -73,6 +73,8 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":13.0,
+    "seqWidth":11.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,

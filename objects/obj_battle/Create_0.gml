@@ -1,4 +1,4 @@
-image_speed = 0.165;
+image_speed = 0.5;
 
 units = [];
 turn = 0;

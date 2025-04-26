@@ -1,4 +1,4 @@
-draw_sprite(spr_background_cats, -1, x, y);
+draw_sprite(spr_shitground, -1, x, y);
 
 // Draw units in depth order
 var _unitWithCurrentTurn = unitTurnOrder[turn].id;
