@@ -281,12 +281,18 @@ function BattleStateBeginBattle()
 	}
 	
 	// Go to Generate Sentence State
-	if (closeOpeningEnemyMessage) battleState = BattleStateGenerateSentence;
+	if (closeOpeningEnemyMessage)
+	{
+		image_speed = 0;
+		battleState = BattleStateGenerateSentence;
+	}
 }
 
 // Ending Battle State
 function BattleStateEndBattle()
 {
+	image_speed = 0.5;
+	
 	if (instance_exists(obj_battle_sentence))
 	{
 		instance_destroy(obj_battle_sentence);
